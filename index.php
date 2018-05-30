@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <h1 class="header">Fortnite Stats</h1>
-            <form class="login-form" action="http://localhost:3000/user" method="post     ">
+            <form class="login-form" action="/user" method="post">
                 <div class="input-group">
                     <label for="username">Username:</label>
                     <input type="text" name="username" class="form-item">
