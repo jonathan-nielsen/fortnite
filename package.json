@@ -2,14 +2,13 @@
     "name": "fortnite",
     "version": "1.0.1",
     "description": "Fortnite",
-    "main": "dist/server.js",
     "scripts": {
         "build": "npm run clean && npm run build:server",
         "build:server": "mkdir -p dist/ && babel src/ --out-dir dist/",
         "clean": "rm -rf dist/",
         "dev": "NODE_PATH=src DEBUG=app*,api* nodemon --watch src/ --exec babel-node -- ./src/server.js",
         "postinstall": "npm run build",
-        "start": "NODE_PATH=dist node dist/app.js"
+        "start": "NODE_PATH=dist node dist/server.js"
     },
     "repository": {
         "type": "git",
