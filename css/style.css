@@ -208,9 +208,9 @@ input {
   .lifetime-stats {
     padding: 0;
   }
-  
+
   .login-form {
-    width: 360px;
+    width: 300px;
     padding: 30px;
   }
 }
