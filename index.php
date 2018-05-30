@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="./js/script.js"></script>
+        <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,width=device-width">
     </head>
     <body>
         <div class="container">
