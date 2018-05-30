@@ -1,16 +1,16 @@
 {
     "name": "fortnite",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Fortnite",
     "main": "dist/server.js",
-    "engines": {
-        "node": "8.9.3"
-    },
     "scripts": {
-        "start": "NODE_PATH=dist DEBUG=app*,api* node dist/server.js",
+        "build": "npm-run-all clean build:server",
+        "build:server": "mkdir -p dist/ && babel src/ --out-dir dist/",
+        "clean": "rm -rf dist/",
+        "dev": "NODE_PATH=src DEBUG=app*,api* nodemon --watch src/ --exec babel-node -- ./src/server.js",
+        "postinstall": "npm run build",
         "prestart": "npm install && npm run build",
-        "build": "babel src/ --out-dir dist/ --copy-files",
-        "dev": "NODE_PATH=src DEBUG=app*,api* nodemon --watch src/ --exec babel-node -- ./src/server.js"
+        "start": "NODE_PATH=dist node dist/app.js"
     },
     "repository": {
         "type": "git",
@@ -35,6 +35,9 @@
         "babel-plugin-transform-runtime": "^6.23.0",
         "babel-preset-env": "^1.5.2",
         "nodemon": "^1.17.3"
+    },
+    "engines": {
+        "node": "8.9.3"
     },
     "author": "Jonathan Nielsen"
 }
