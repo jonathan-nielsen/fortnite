@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'Burbank';
   font-weight: 400;
-  src: url('./font/BurbankBigCondensed-Black.woff2') format('woff2');
+  src: url('/font/BurbankBigCondensed-Black.woff2') format('woff2');
 }
 
 * {
@@ -20,7 +20,7 @@ body {
 }
 
 body {
-  background-image: url(media/wp2366169.jpg);
+  background-image: url(/media/wp2366169.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
