@@ -184,8 +184,9 @@ input {
 @media screen and (max-width: 991px) {
   .header {
     text-align: center;
+    margin: 40px 0 0;
   }
-  
+
   .stats {
     padding: 20px;
   }
