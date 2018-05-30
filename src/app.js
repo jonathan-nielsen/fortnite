@@ -7,6 +7,8 @@ import path from 'path';
 import routes from 'express-recursive-routes';
 import session from 'express-session';
 
+console.log(1)
+
 const log = debug('app:config');
 const app = express();
 log('Packages loaded.');
