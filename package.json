@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "Fortnite",
     "main": "dist/server.js",
+    "engines": {
+    "node": "8.9.3"
+    },
     "scripts": {
         "start": "NODE_PATH=dist DEBUG=app*,api* node dist/server.js",
         "prestart": "npm install && npm run build",
