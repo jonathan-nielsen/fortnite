@@ -4,7 +4,7 @@
     "description": "Fortnite",
     "main": "dist/server.js",
     "scripts": {
-        "start": "NODE_PATH=dist DEBUG=app* node dist/server.js",
+        "start": "NODE_PATH=dist DEBUG=app*,api* node dist/server.js",
         "prestart": "npm install && npm run build",
         "build": "babel src/ --out-dir dist/ --copy-files",
         "dev": "NODE_PATH=src DEBUG=app*,api* nodemon --watch src/ --exec babel-node -- ./src/server.js"
