@@ -11,6 +11,8 @@ const log = debug('app:config');
 const app = express();
 log('Packages loaded.');
 
+console.log(1)
+
 app.use(express.static('public'));
 app.set('trust proxy', 1);
 app.use(cors());
