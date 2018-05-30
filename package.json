@@ -4,7 +4,7 @@
     "description": "Fortnite",
     "main": "dist/server.js",
     "scripts": {
-        "build": "npm-run-all clean build:server",
+        "build": "npm run clean && npm run build:server",
         "build:server": "mkdir -p dist/ && babel src/ --out-dir dist/",
         "clean": "rm -rf dist/",
         "dev": "NODE_PATH=src DEBUG=app*,api* nodemon --watch src/ --exec babel-node -- ./src/server.js",
