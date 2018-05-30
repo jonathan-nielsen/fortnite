@@ -24,6 +24,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   font-family: 'Burbank';
 }
 
@@ -92,6 +93,7 @@ input {
   display: none;
   flex-direction: column;
   width: 800px;
+     max-width: 100%;
 }
 
 .stats.flex {
@@ -176,4 +178,33 @@ input {
 
 .game-stat-header .value {
   float: right;
+}
+
+
+@media screen and (max-width: 991px) {
+  .header {
+    text-align: center;
+  }
+  
+  .stats {
+    padding: 20px;
+  }
+
+  .solo-stats,
+  .duo-stats,
+  .squad-stats {
+    height: auto;
+  }
+
+  .game-stats {
+     flex-direction: column;
+  }
+
+  .stat-block {
+     padding: 20px 0;
+  }
+
+  .lifetime-stats {
+    padding: 0;
+  }
 }
