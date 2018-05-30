@@ -2,6 +2,7 @@
     "name": "fortnite",
     "version": "1.0.0",
     "description": "Fortnite",
+    "main": "dist/server.js",
     "scripts": {
         "start": "NODE_PATH=dist DEBUG=app* node dist/server.js",
         "prestart": "npm install && npm run build",

@@ -6,8 +6,8 @@ const serverLog = debug('app:server');
 
 serverLog('Starting server...');
 
-app.listen(process.env.PORT, () => {
-    serverLog(`Server running on port ${process.env.PORT}.`);
+app.listen(process.env.PORT || 8080, () => {
+    serverLog(`Server running on port ${process.env.PORT || 8080}.`);
 });
 
 export default app;
