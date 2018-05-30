@@ -1,0 +1,179 @@
+@charset 'UTF-8';
+@font-face {
+  font-family: 'Burbank';
+  font-weight: 400;
+  src: url('./font/BurbankBigCondensed-Black.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  width: 100vw;
+  height: 100vh;
+  letter-spacing: 1px;
+}
+
+body {
+  background-image: url(media/wp2366169.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Burbank';
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-form {
+  width: 360px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 50px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  width: 80px;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+  background-color: #6e5452;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #5f4846;
+}
+
+/* Form is all inputs and the button of the form */
+.form-item {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.header {
+  color: #fff;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #6e5452;
+  outline: none;
+  color: #fff;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.stats {
+  display: none;
+  flex-direction: column;
+  width: 800px;
+}
+
+.stats.flex {
+  display: flex !important;
+}
+
+.lifetime-stats {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  padding: 40px 0;
+}
+
+.game-stats {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.stat-block {
+  flex: 1;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-block h1,
+.stat-block h4 {
+  margin: 0;
+}
+
+.solo-stats,
+.duo-stats,
+.squad-stats {
+  height: 400px;
+  flex: 1;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.inner {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.game-stats .stat-block {
+  flex: 1 1 50%;
+}
+.game-stats .inner .key {
+  font-size: 16px;
+}
+
+.game-stat-header {
+  color: #fff;
+  padding: 10px 16px;
+  float: left;
+  width: 100%;
+}
+
+.solo-stats .game-stat-header {
+  background-color: #0682b1;
+}
+
+.duo-stats .game-stat-header {
+  background-color: #c71f1f;
+}
+
+.squad-stats .game-stat-header {
+  background-color: #9042a6;
+}
+
+.lifetime.game-stat-header {
+  background-color: #504e4e;
+}
+
+.game-stat-header .key {
+  float: left;
+}
+
+.game-stat-header .value {
+  float: right;
+}
