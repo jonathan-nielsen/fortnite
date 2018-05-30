@@ -9,7 +9,6 @@
         "clean": "rm -rf dist/",
         "dev": "NODE_PATH=src DEBUG=app*,api* nodemon --watch src/ --exec babel-node -- ./src/server.js",
         "postinstall": "npm run build",
-        "prestart": "npm install && npm run build",
         "start": "NODE_PATH=dist node dist/app.js"
     },
     "repository": {
