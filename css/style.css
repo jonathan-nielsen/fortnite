@@ -147,4 +147,17 @@ body {
   .stat {
     padding: 20px;
   }
+
+  .videos {
+    padding: 40px;
+    flex-direction: column;
+  }
+
+  .videos iframe {
+     max-width: 100%;
+  }
+
+  iframe + iframe {
+    margin-top: 40px;
+  }
 }
