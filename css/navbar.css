@@ -1,0 +1,24 @@
+body {
+  padding-top: 70px;
+}
+
+.navbar {
+  font-size: 24px;
+  background-color: #2971a7;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0px 10px;
+}
+
+.navbar a:hover {
+  color: #ccb9b9;
+}

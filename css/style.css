@@ -1,216 +1,150 @@
-@charset 'UTF-8';
-@font-face {
-  font-family: 'Burbank';
-  font-weight: 400;
-  src: url('/font/BurbankBigCondensed-Black.woff2') format('woff2');
-}
-
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
+  font-size: 16px;
   margin: 0;
   padding: 0;
-  font-size: 22px;
   width: 100vw;
   height: 100vh;
-  letter-spacing: 1px;
+  font-family: 'Sunflower', sans-serif;
 }
 
-body {
-  background-image: url(/media/wp2366169.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: 'Burbank';
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.login-form {
-  width: 360px;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 50px;
-}
-
-.input-group {
-  margin-bottom: 15px;
-}
-
-label {
-  width: 80px;
-  display: inline-block;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-button {
-  font-size: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  background-color: #6e5452;
-  color: #fff;
-  border: none;
-  text-transform: uppercase;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: #5f4846;
-}
-
-/* Form is all inputs and the button of the form */
-.form-item {
-  display: block;
+.banner {
+  background-image: url(./media/maxresdefault.jpg);
   width: 100%;
-  padding: 15px;
-  border-radius: 25px;
+  height: calc(100vh - 70px);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.boxes {
+  display: flex;
+  padding: 120px 55px;
+  background-color: #efefef;
+}
+.box {
+  flex: 1;
+  padding: 20px;
+}
+.box-inner {
+  height: 100%;
+  background-color: #fff;
+}
+.box-header {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.box:nth-child(1) .box-header {
+  background-image: url(./media/yellow.png);
+  background-size: cover;
 }
 
-.header {
-  color: #fff;
-  font-size: 80px;
-  text-transform: uppercase;
+.box:nth-child(2) .box-header {
+  background-image: url(./media/red.png);
+  background-size: cover;
+}
+.box:nth-child(3) .box-header {
+  background-image: url(./media/blue.png);
+  background-size: cover;
 }
 
-input {
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 1px solid #6e5452;
-  outline: none;
-  color: #fff;
-  font-family: Arial;
-  font-size: 16px;
+.img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  margin: 20px 20px 100px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+.box-content {
+  display: flex;
 }
 
 .stats {
-  display: none;
-  flex-direction: column;
-  width: 800px;
-     max-width: 100%;
-}
-
-.stats.flex {
-  display: flex !important;
-}
-
-.lifetime-stats {
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  padding: 40px 0;
-}
-
-.game-stats {
-  display: flex;
-  margin: 0 -10px;
-}
-
-.stat-block {
   flex: 1;
-  color: #fff;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.stat-block h1,
-.stat-block h4 {
-  margin: 0;
-}
-
-.solo-stats,
-.duo-stats,
-.squad-stats {
-  height: 400px;
-  flex: 1;
-  margin-top: 20px;
-  padding: 0 10px;
-}
-
-.inner {
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  height: 100%;
   flex-wrap: wrap;
   display: flex;
 }
 
-.game-stats .stat-block {
+.stat {
   flex: 1 1 50%;
-}
-.game-stats .inner .key {
-  font-size: 16px;
-}
-
-.game-stat-header {
-  color: #fff;
-  padding: 10px 16px;
-  float: left;
-  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.solo-stats .game-stat-header {
-  background-color: #0682b1;
+.stat h4 {
+  margin: 0 0 4px 0;
+  font-size: 28px;
+}
+.number {
+  font-size: 28px;
 }
 
-.duo-stats .game-stat-header {
-  background-color: #c71f1f;
+.percentile {
+  height: 6px;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  background-color: #b3b3b3;
+  overflow: hidden;
 }
 
-.squad-stats .game-stat-header {
-  background-color: #9042a6;
+.percentile .inner {
+  height: 100%;
 }
 
-.lifetime.game-stat-header {
-  background-color: #504e4e;
+.box:nth-child(1) .percentile .inner {
+  background-color: #ec8b01;
 }
 
-.game-stat-header .key {
-  float: left;
+.box:nth-child(2) .percentile .inner {
+  background-color: #d40341;
+}
+.box:nth-child(3) .percentile .inner {
+  background-color: #167593;
 }
 
-.game-stat-header .value {
-  float: right;
+.videos {
+  display: flex;
+  justify-content: space-between;
+  padding: 140px 75px;
 }
 
+.videos iframe {
+  flex: 1;
+}
 
-@media screen and (max-width: 991px) {
-  .header {
-    text-align: center;
-    margin: 40px 0 20px;
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 30vh;
   }
 
-  .stats {
+  .boxes {
     padding: 20px;
+    flex-direction: column;
   }
 
-  .solo-stats,
-  .duo-stats,
-  .squad-stats {
-    height: auto;
+  .box-content {
+    flex-direction: column;
   }
 
-  .game-stats {
-     flex-direction: column;
+  .img {
+    margin: 20px auto;
   }
 
-  .stat-block {
-     padding: 20px 0;
-  }
-
-  .lifetime-stats {
-    padding: 0;
-  }
-
-  .login-form {
-    width: 300px;
-    padding: 30px;
+  .stat {
+    padding: 20px;
   }
 }
