@@ -2,7 +2,7 @@ $(document).ready(function() {
   const players = ['ninja', 'tsm_myth', 'twitch_svennoss']
 
   for (let player of players) {
-    $.get('http://johannes-fortnite-api.herokuapp.com/user/' + player).then(res => {
+    $.get('https://johannes-fortnite-api.herokuapp.com/user/' + player).then(res => {
       console.log(res);
 
       const soloMatches = parseInt(res.stats.p2.matches.value);

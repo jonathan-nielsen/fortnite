@@ -13,7 +13,7 @@ body {
 }
 
 .banner {
-  background-image: url(./media/maxresdefault.jpg);
+  background-image: url(../media/maxresdefault.jpg);
   width: 100%;
   height: calc(100vh - 70px);
   background-size: cover;
@@ -40,16 +40,16 @@ body {
   font-size: 20px;
 }
 .box:nth-child(1) .box-header {
-  background-image: url(./media/yellow.png);
+  background-image: url(../media/yellow.png);
   background-size: cover;
 }
 
 .box:nth-child(2) .box-header {
-  background-image: url(./media/red.png);
+  background-image: url(../media/red.png);
   background-size: cover;
 }
 .box:nth-child(3) .box-header {
-  background-image: url(./media/blue.png);
+  background-image: url(../media/blue.png);
   background-size: cover;
 }
 

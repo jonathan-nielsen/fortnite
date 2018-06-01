@@ -5,6 +5,7 @@
         <title>Fortnite Stats</title>
         <link rel="stylesheet" href="./css/get-stats.css">
         <link rel="stylesheet" href="./css/navbar.css">
+        <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
         <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,width=device-width">
     </head>
     <body>
