@@ -11,7 +11,7 @@
     <body>
         <div class="navbar">
             <a href="/">Home</a>
-            <a href="/get-stats" target="_blank">Get Stats</a>
+            <a href="/get-stats">Get Stats</a>
         </div>
         <div class="container">
             <h1 class="header">Fortnite Stats</h1>
